@@ -28,7 +28,7 @@ function App() {
     let data = [files, file2]
     setLoading(true)
     setValid(null)
-    axios.post('http://ca38fe5442dc.ngrok.io/face-compare', data)
+    axios.post('https://ca38fe5442dc.ngrok.io/face-compare', data)
       .then((response) => {
         setLoading(false)
         setValid(response.data.isValid)
